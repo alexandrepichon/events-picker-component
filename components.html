@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Componebts</title>
+    <script type="module">
+      import './node_modules/@polymer/paper-toggle-button/paper-toggle-button.js';
+    </script>  
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <custom-style>
+      <style is="custom-style">
+        paper-toggle-button.conflict {
+          --paper-toggle-button-checked-bar-color:  var(--paper-red-500);
+          --paper-toggle-button-checked-button-color:  var(--paper-red-500);
+          --paper-toggle-button-checked-ink-color: var(--paper-red-500);
+        }
+        paper-toggle-button.alt {
+          --paper-toggle-button-checked-bar-color:  var(--paper-green-500);
+          --paper-toggle-button-checked-button-color:  var(--paper-green-500);
+          --paper-toggle-button-checked-ink-color: var(--paper-green-500);
+        }
+      </style>
+    </custom-style>
+    <h1>Formations</h1>
+    <div>
+      <h2>Formation 1</h2>
+      <paper-toggle-button class="alt"> S'inscrire </paper-toggle-button> 
+      <h2>Formation 2</h2>
+      <paper-toggle-button checked class="alt"> Inscrit </paper-toggle-button>
+      <h2>Formation 3</h2>
+      <paper-toggle-button disabled> Pleine </paper-toggle-button>
+      <h2>Formation 4</h2>
+      <paper-toggle-button checked class="conflict"> Conflit </paper-toggle-button>
+    </div>
+  </body>
+
+</html>

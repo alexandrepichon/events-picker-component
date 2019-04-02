@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@polymer/paper-toggle-button": "^3.0.1",
+    "lit-element": "^2.1.0"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.7"
+  }
+}
