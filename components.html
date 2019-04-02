@@ -7,7 +7,20 @@
       import './node_modules/@polymer/paper-toggle-button/paper-toggle-button.js';
     </script>  
     <style>
-
+      .session-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+          grid-auto-rows: auto;
+          grid-gap: 1rem;
+      }
+      .session {
+        border: 2px solid #e7e7e7;
+        border-radius: 4px;
+        padding: .5rem;
+      }  
+      h3 {
+        margin-top: 0;
+      }
     </style>
   </head>
 
@@ -26,17 +39,34 @@
         }
       </style>
     </custom-style>
-    <h1>Formations</h1>
-    <div>
-      <h2>Formation 1</h2>
-      <paper-toggle-button class="alt"> S'inscrire </paper-toggle-button> 
-      <h2>Formation 2</h2>
-      <paper-toggle-button checked class="alt"> Inscrit </paper-toggle-button>
-      <h2>Formation 3</h2>
-      <paper-toggle-button disabled> Pleine </paper-toggle-button>
-      <h2>Formation 4</h2>
-      <paper-toggle-button checked class="conflict"> Conflit </paper-toggle-button>
-    </div>
-  </body>
 
+    <h1>Formations</h1>
+    <h2>Lundi 1er avril</h2>
+    <section class="session-container">
+      <div class="session">
+        <h3>Formation 1</h3>
+        <div class="from">09h00</div>
+        <div class="to">10h00</div>
+        <div class="location">212</div>
+        <paper-toggle-button class="alt"> S'inscrire </paper-toggle-button> 
+        <div class="abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</div>
+      </div>
+      <div class="session">
+        <h3>Formation 2</h3>
+        <paper-toggle-button checked class="alt"> Inscrit </paper-toggle-button>
+        <div class="abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</div>
+      </div>
+      <div class="session">
+        <h3>Formation 3</h3>
+        <paper-toggle-button disabled> Complet </paper-toggle-button>
+        <div class="abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</div>
+      </div>
+      <div class="session">
+        <h3>Formation 4</h3>
+        <paper-toggle-button checked class="conflict"> Conflit </paper-toggle-button>
+        <div class="abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</div>
+      </div>
+    </section>
+    
+  </body>
 </html>
